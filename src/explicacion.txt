@@ -1,0 +1,23 @@
+Componentes:
+
+React, mas que basarse solo en vistas, se basa en Componentes
+¿Que es un componente?
+Es, basicamente una funcion de Javascript (o Typescript) la cual retorna fragmentos de HTML.
+Cabe recalcar, que la gracia de esto, es que podemos utilizar componentes como si fueran etiquetas HTML.
+
+Ciclo de vida:
+Montan-Interactuan-Desmontan
+Es el ciclo por el cual atraviesan los componentes, desde que se montan, se interactua y desmontan.
+
+
+Hooks:
+Basicamente un hook, es una funcion que nos ayuda a manipular informacion o diferentes funcionalidades.
+Estos metodos, se ven afectados por el estado, y el ciclo de vida del componente.
+los Hooks mas usados son useState y useEffect.
+Si te fijas, todos los hooks empiezan con use
+
+useState:
+Es un hook que nos permite almacenar informacion DENTRO del ciclo de vida del componente.
+esto quiere decir, que una vez que el componente se desmonta, y se vuelve a montar, se perdio la informacion que venia guardando en el otro ciclo de vida.
+el useState cuenta con 2 "propiedades" una es el valor del estado en si, y la otra es un Setter.
+el valor del estado en si, es INMUTABLE, pero lo modificas a traves del setter
